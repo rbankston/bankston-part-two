@@ -20,8 +20,10 @@ for (let i = 0; i < parseInt(holeCount); i++){
 
 let calculatedPar = parseInt(score) - (parseInt(holeCount)*3)
 
-if (calculatedPar > 1){
-    console.log(`Good Game, ${userName}! Your total par was : +${calculatedPar}`)
+if (calculatedPar == 0){
+    console.log(`Good Game, ${userName}. Your total par was : ${calculatedPar}`)
+} else if (calculatedPar > 1){
+    console.log(`Nice try, ${userName}... Your total par was : +${calculatedPar}`)
 } else {
-    console.log(`Good Game, ${userName}! Your total par was : ${calculatedPar}`)
+    console.log(`Great job, ${userName}! Your total par was : ${calculatedPar}`)
 }
